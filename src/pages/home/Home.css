@@ -1,0 +1,302 @@
+/* HERO CSS */
+.hero {
+  padding-top: 100px;
+  background-color: black;
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+.hero-all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right img {
+  width: 100%;
+}
+
+.hero-left h1 {
+  color: white;
+  font-size: 60px;
+  max-width: 420px;
+  line-height: 80px;
+}
+
+.hero-left p {
+  color: #8b8e99;
+  max-width: 360px;
+  padding: 15px 0 35px 0;
+}
+
+.hero-left-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 443px;
+}
+
+.hero-left-input input {
+  width: 100%;
+  max-width: 443px;
+  padding: 15px 40px;
+  border-radius: 7px;
+  border: none;
+}
+
+.hero-left-input button {
+  background-color: #3858d6;
+  padding: 8px 20px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.hero-left-input svg {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  color: #3858d6;
+}
+
+@media (max-width: 630px) {
+  .hero-all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-left {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-left h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-left p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+}
+
+/* BANNER CSS */
+.banner {
+  padding-top: 50px;
+  padding-bottom: 130px;
+}
+
+.banner-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.banner-card {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 26px;
+  background-color: #f6f6f6;
+  border-radius: 40px;
+  border: none;
+}
+
+.banner-img {
+  width: 40%;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-info {
+  width: 60%;
+}
+
+.banner-info h1 {
+  font-size: 35px;
+}
+
+.banner-info p {
+  color: grey;
+  font-size: 15px;
+}
+
+@media (max-width: 790px) {
+  .banner-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 530px) {
+  .banner-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* PRODUCTS CSS */
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .products-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .products-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.products-bottom {
+  text-align: center;
+}
+
+.products-top {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.products-top h3 {
+  color: #3858d6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.products-top h1 {
+  font-size: 45px;
+}
+
+/* ABOUT CSS */
+.about {
+  padding-top: 80px;
+}
+
+.about-swiper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(246, 246, 246, 1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.swiper-info h3 {
+  font-size: 20px;
+}
+
+.swiper-info p {
+  color: grey;
+  padding: 5px 0;
+}
+
+.swiper-wrapper {
+  padding-bottom: 40px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/* NEWSLETTER CSS */
+.newsletter {
+  padding: 50px 0;
+}
+.newsletter-all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  padding: 30px 50px;
+  border-radius: 20px;
+  height: 367px;
+}
+
+.newsletter-left {
+  width: 50%;
+}
+
+.newsletter-left h1 {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.newsletter-left p {
+  color: grey;
+  padding-bottom: 20px;
+}
+
+.newsletter-right {
+  height: 100%;
+  width: 50%;
+}
+
+.newsletter-right img {
+  height: 100%;
+  width: 100%;
+}
+
+.newsletter-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 443px;
+}
+
+.newsletter-input input {
+  width: 100%;
+  max-width: 443px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-input button {
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #3858d6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .newsletter-all {
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+  }
+  .newsletter-left {
+    width: 100%;
+    text-align: center;
+  }
+}
